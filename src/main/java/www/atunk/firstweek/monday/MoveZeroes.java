@@ -9,6 +9,12 @@ package www.atunk.firstweek.monday;
 public class MoveZeroes {
 	class Solution {
 		public void moveZeroes(int[] nums) {
+
+			//特殊判断
+			if (nums == null && nums.length < 2) {
+				return;
+			}
+
 			int i = 0;
 			int j = 0;
 			int temp;
